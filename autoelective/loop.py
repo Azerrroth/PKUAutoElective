@@ -605,9 +605,9 @@ def run_elective_loop():
                         break
                     elif res == "0":
                         cout.info("Validation failed")
-                        captcha.save(CAPTCHA_CACHE_DIR)
-                        cout.info("Save %s to %s" %
-                                  (captcha, CAPTCHA_CACHE_DIR))
+                        # captcha.save(CAPTCHA_CACHE_DIR)
+                        # cout.info("Save %s to %s" %
+                        #           (captcha, CAPTCHA_CACHE_DIR))
                         cout.info("Try again")
                     else:
                         cout.warning("Unknown validation result: %s" % res)
